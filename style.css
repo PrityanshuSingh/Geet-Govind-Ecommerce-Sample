@@ -1,0 +1,285 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+html,body{
+    height: 100vh; 
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.body{
+    background-color: white;
+}
+
+
+
+
+/* navbar */
+.navbar{
+    background-color:#008B8B; 
+    width:100%;
+    color:white;
+    padding:20px 20px 20px 20px;
+    font-size: 22px;
+    display:flex; 
+    align-items:center; 
+    gap: 40px;
+    box-sizing: border-box;
+    overflow: hidden; 
+    position: fixed; 
+    top: 0; 
+    z-index: 10;
+}
+
+.logo a{
+    color: #252B42;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: solid;
+    cursor: pointer;
+}
+
+.links{
+    margin-left:0px;
+    cursor: pointer;
+    align-items:center;
+}
+
+.links a{
+    color:white;
+    text-decoration: solid;
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+.links a:hover{
+    color: #252B42;
+    transition: .2s linear;
+   
+}
+
+.icons{
+    font-size:20px;
+    font-family: 'Poppins', sans-serif;
+    margin-left:30px;
+    cursor: pointer;
+    
+}
+
+.icons :hover{
+    color: #252B42;
+    transition: .2s linear;
+    font-weight: 600;
+}
+
+#icon{
+    margin-left:10px; 
+    font-weight: 600;
+}
+
+
+
+
+
+
+/* Header */
+.product-head{
+    font-size:60px; 
+    color:#252B42; 
+    margin-bottom:60px; 
+    text-align:center; 
+    margin-left:30px;
+}
+
+.card-container{
+
+    display:flex; 
+    flex-direction:column; 
+    padding:30px;
+    padding-top:12%;
+    z-index:2;
+    background: linear-gradient(to top, rgba(0, 139, 139, .6), rgba(255, 255, 255, 1) 50%);
+}
+
+.row{
+    gap:100px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 120px;  
+}
+
+#r2{
+    margin-bottom: 200px;
+}
+
+.card{
+    background-color:transparent; 
+    width:25%;
+    height: 400px;
+    position: relative;
+    z-index:0;
+}
+
+
+.p-img {
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.p-img img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s linear; 
+}
+
+.p-img img:hover {
+    transform: scale(1.1);
+    cursor: pointer;  
+}
+
+.p-img:hover {
+    box-shadow: 6px 6px 12px #252B42;
+    transition: .2s linear; 
+    border-radius: 5px;
+}
+
+.p-info {
+    font-size: 0.7rem;
+    transform: translateY(0px);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1; /* Lower z-index for .p-info */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    color:white;
+    background-color: #252B42;
+}
+
+.p-heading{
+    background-color:#008B8B; 
+    padding:20px;
+    width:150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 80px;
+
+}
+
+.p-heading:hover {
+    cursor: pointer;
+    background-color: #1842B6;
+    transition: 0.2s linear;
+    
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+.p-price{
+
+    background-color:#1842B6; 
+    padding:20px;
+    font-weight: 300;
+    text-align: right;
+    width:150px;
+    overflow: hidden;
+    height: 80px;
+    line-height: 33px;
+ 
+}
+
+.p-price:hover {
+    cursor: pointer;
+    background-color:#008B8B;
+    transition: 0.2s linear;
+}
+
+
+/* footer */
+.footer{
+    background-color:#252B42; 
+    color:white;
+    display:flex; 
+    flex-direction:column; 
+    align-items:center; 
+    padding:6%;
+    padding-bottom: 15px;
+    gap:60px;
+    word-spacing: 5px;
+}
+
+
+.follow-links{
+    display:flex; 
+    gap:50px;
+    color:white;
+}
+
+.follow-links h2{
+    padding-bottom: 15px;
+}
+
+.link1,
+.link2{
+    display:flex; 
+    flex-direction:column;
+    align-items: center;
+}
+
+.link1 a,
+.link2 a{
+    font-size:1.2rem; 
+    text-decoration: solid;
+    font-weight: 400; 
+    color:white;
+    line-height: 40px;
+}
+
+.link1 a:hover,
+.link2 a:hover{
+    color:#008B8B;
+    transition: .2s linear;
+    cursor: pointer;
+}
+
+.follow-icons-container {
+    border-top: 2px solid white;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: -20px; 
+    position: relative;
+}
+
+.follow-icons i{
+    
+    color:white;
+    font-size:30px;
+    margin-left: 20px;
+}
+
+.follow-icons i:hover{
+    color:#008B8B;
+    transition: .2s linear;
+    cursor: pointer;
+}
